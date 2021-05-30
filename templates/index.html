@@ -5,7 +5,18 @@
 	<title>Target 1700</title>
 </head>
 <body>
-  <h4 style="color: purple;">Goal: To reach Candidate Master before July 31st.</h4>
-  <h3> Days remaining: {{ data }} </h3>
+  <div style="width: 80%; margin: auto; padding: 5px; background-color: #eee;">
+    <h4 style="color: purple;">Goal: To reach Candidate Master before July 31st.</h4>
+    <h3> Days remaining: {{ days }} </h3>
+  </div>
+  <div style="width: 60%; margin: auto; background-color: #e1e1e1">
+    <h5> Handle: {{ user['handle'] }} </h5>
+    <h5> Name: {{ user['firstName'] }} {{ user['lastName'] }} </h5>
+    <h5> Location: {{ user['city'] }} , {{ user['country'] }} </h5>
+    <h5> Institution: {{ user['organization'] }} </h5>
+    <h5> Rating: {{ user['rating'] }} </h5>
+    <h5> Rank: {{ user['rank'] }} </h5>
+    <img scr= "https://userpic.codeforces.org/1913976/avatar/3d5b8e39eb7fe2b8.jpg"}} >
+  </div>
 </body>
 </html>
